@@ -4,6 +4,7 @@ public class SnakeAndLadder {
 		
 		
 		int position = 0;
+
 		int position2 = 0;
 		System.out.println(" Moksh Patam Welcome to the game ! ");
 		
@@ -46,10 +47,11 @@ public class SnakeAndLadder {
 				if (position2 > 100) {
 					position2 -= dice;
 					System.out.println(" 2nd Player counting not more than 100 ");
-				}
+						}
 				break;
 			case 2: 
 				System.out.println(" Oh no ! snake");
+
 				if (turn != 0) 
 					position -= dice;
 					
