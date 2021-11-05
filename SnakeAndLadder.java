@@ -1,3 +1,4 @@
+
 public class SnakeAndLadder {
 
 	public static void main(String[] args) {
@@ -11,7 +12,9 @@ public class SnakeAndLadder {
 		
 		int dice;
 		int option;
+
 		int times=0;
+
 		
 
 		while (position < 100) {
@@ -44,11 +47,17 @@ public class SnakeAndLadder {
 							
 			
 			System.out.println("Your Current position - " + position);
+
 			times++;
 		}
 		
 		System.out.println("Congratulations!- You won the game in "  +times+ " roll dice times");
                 
-	   }
+	      }
 
-   }
+       }
+
+			
+		}
+		
+
