@@ -31,8 +31,9 @@ public class SnakeAndLadder{
 			position -= dice;
 		
          	    System.out.println(" Your Current Position is " +position);
-
-	}
+	     }
+		
+	 }
 
     }
 
