@@ -1,12 +1,11 @@
 
-
-
 public class SnakeAndLadder {
 
 	public static void main(String[] args) {
 		
 		
 		int position = 0;
+
 
 		System.out.println(" Moksh Patam - Welcome to the game ! ");
 		
@@ -15,43 +14,47 @@ public class SnakeAndLadder {
 		int option;
 		
 		
-		while (position <= 100) {
 
-			dice = (int)Math.floor( (Math.random() * 10) % 6 + 1);
+		while (position < 100) {
+	        		            dice = (int)Math.floor( (Math.random() * 10) % 6 + 1);
  
-			System.out.println("Dice's Value comes out  " + dice);
+		        	            System.out.println("Dice value is - " + dice);
 
-			option = (int)Math.floor(Math.random() * 3); 
-			
-			
-            if (option == 0) {
+			                    option = (int)Math.floor(Math.random() * 3);
 
-            	System.out.println("No Movement Stay the same");
 
-            }else if (option == 1) {
-
-                System.out.println("Ladder Oh yes !");
-                position += dice;
- 
-                System.out.println("Your Current Position is -" + position);
-
-            }else if (option == 2) {
-                System.out.println("oh no ! Snake");
-                position -= dice;  
-
-                System.out.println("Your Current Position is -" + position);
-
-                if (position < 0) {
-                    position = 0;
-
-                    System.out.println("Your Current Position is -" + position);				
+                                      switch(option) {
+			case 0: 
+				System.out.println(" No Movement Stay the same");
+				break;
+			case 1: 
+				System.out.println(" ladder Oh yes!");
+				position += dice;
+				if (position > 100) {
+					position -= dice;
+					System.out.println(" counting not more than 100");
+				}
+				break;
+			case 2: 
+				System.out.println(" Oh no ! snake");
+				position -= dice;
+				position = position < 0 ? 0 : position;
+				break;
+							
 			}
-		               	System.out.println(" Your Current position- " + position);
-			}
-		                 System.out.println(" Congratulations!- You won the game!");
-    	   }
-     }
+							
+			
+			System.out.println("Your Current position - " + position);
+			
+		}
+		
+		System.out.println("Congratulations!- You won the game");
+	   }
+
+   }
+
 }
+
 
 
 
