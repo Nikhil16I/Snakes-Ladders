@@ -46,18 +46,13 @@ public class SnakeAndLadder {
 
                     System.out.println("Your Current Position is ==>" + position);				
 			}
-			
-			System.out.println(" your Current position: " + position);
-			
-		}
-		
-		System.out.println(" Congratulations!- You won the game!");
-	}
+		               	System.out.println(" your Current position: " + position);
+			}
+		                 System.out.println(" Congratulations!- You won the game!");
+    	   }
+     }
+}
 
-    }
-
-
- }
 
 
 
