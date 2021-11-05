@@ -44,9 +44,9 @@ public class SnakeAndLadder {
                 if (position < 0) {
                     position = 0;
 
-                    System.out.println("Your Current Position is ==>" + position);				
+                    System.out.println("Your Current Position is -" + position);				
 			}
-		               	System.out.println(" your Current position: " + position);
+		               	System.out.println(" Your Current position- " + position);
 			}
 		                 System.out.println(" Congratulations!- You won the game!");
     	   }
