@@ -8,7 +8,7 @@ public class SnakeAndLadder {
 		
 		int position = 0;
 
-		System.out.println(" Moksh-Patam Welcome to the game ! ");
+		System.out.println(" Moksh Patam - Welcome to the game ! ");
 		
 		
 		int dice;
